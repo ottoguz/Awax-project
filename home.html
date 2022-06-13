@@ -11,6 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/74cb728af8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menu-opener").addEventListener("click", function() {
+                if (document.querySelector(".menu nav").style.display == 'flex') {
+                    document.querySelector(".menu nav").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <title>Awax</title>
 </head>
 
